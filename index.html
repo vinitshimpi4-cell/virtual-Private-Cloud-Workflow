@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Build a VPC, step by step</title>
+<meta name="description" content="An animated, beginner-friendly walkthrough of an AWS VPC: subnets, gateways, NAT, security groups, VPN and peering.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<aside>
+  <h1>Build a VPC, one piece at a time</h1>
+  <p>Click each step. The diagram grows into a complete cloud network.</p>
+  <div class="steps" id="steps"></div>
+  <div class="ctl"><button id="play">▶ Auto-play</button><button class="g" id="reset">Reset</button></div>
+  <div class="legend"><span>✉️ visitor request</span><span>💾 data · 🔁 live copy</span><span>📦 software update</span><span>😈 intruder · 🔐 office · 🤝 partner</span></div>
+</aside>
+<main>
+  <div class="stage"><svg id="svg" viewBox="0 0 1100 620" role="img" aria-label="VPC architecture diagram that grows step by step"></svg></div>
+  <div class="cap">
+    <div><h2 id="t"></h2><div class="box"><span class="k">In plain words</span><p id="pl"></p></div></div>
+    <div><div class="box"><span class="k">Technical name</span><p id="te"></p></div><div class="box"><span class="k">Watch the picture</span><p id="wa"></p></div></div>
+  </div>
+</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
